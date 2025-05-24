@@ -1,0 +1,38 @@
+.button_invite {
+  box-shadow: none;
+  border: none;
+  background: linear-gradient(90deg, var(--lime-green), var(--bright-cyan));
+  color: var(--white-color);
+  padding: 0.875rem 2.875rem;
+  font-weight: 700;
+  text-transform: capitalize;
+  border-radius: 34px;
+  transition: opacity 400ms;
+  cursor: pointer;
+  width: fit-content;
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+.main_container.button_invite {
+  margin-top: 0.85rem;
+}
+.header_container.button_invite {
+  position: absolute;
+  opacity: 0;
+  z-index: -100;
+}
+
+@media (width > 769px) {
+  .header_container.button_invite {
+    position: initial;
+    opacity: 1;
+    z-index: 100;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}
