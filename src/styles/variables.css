@@ -8,13 +8,6 @@
   --very-light-gray: hsl(0, 0%, 98%);
   --white-color: hsl(0, 0%, 100%);
 
-  --background: #ffffff;
+  --background: var(--very-light-gray);
   --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
 }

@@ -1,0 +1,31 @@
+.choose_card_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-inline: auto;
+  gap: 1.5rem;
+}
+
+.choose_card_author {
+  font-size: 0.75rem;
+  color: var(--grayish-blue);
+}
+
+.choose_card_title {
+  font-weight: 400;
+  color: var(--dark-blue);
+}
+
+.choose_card_description {
+  font-size: 0.875rem;
+  color: var(--grayish-blue);
+  line-height: 24px;
+  text-align: center;
+}
+
+@media (width > 649px) {
+  .choose_card_container {
+    width: 265px;
+  }
+}

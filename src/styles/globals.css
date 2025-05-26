@@ -6,17 +6,26 @@ body {
   overflow-x: hidden;
 }
 
+@media (width > 769px) {
+  html,
+  body {
+    font-size: 111%;
+  }
+}
+
 body {
   color: var(--foreground);
   background: var(--background);
   font-family: var(--font-public-sans), Arial, Helvetica, sans-serif;
-  font-size: 18px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  max-width: 1440px;
-  min-width: 375px;
   position: relative;
   height: 100dvh;
+}
+
+main,
+header {
+  position: relative;
 }
 
 * {
@@ -28,10 +37,4 @@ body {
 a {
   color: inherit;
   text-decoration: none;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
 }
