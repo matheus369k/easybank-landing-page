@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Public_Sans } from 'next/font/google'
 import { Header } from '@/components/Header'
 import '@/styles/globals.css'
+import { Footer } from '@/components/Footer'
 
 const PublicSans = Public_Sans({
   variable: '--font-public-sans',
@@ -24,6 +25,7 @@ export default function RootLayout({
       <body className={PublicSans.variable}>
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   )
