@@ -3,6 +3,8 @@ import { Public_Sans } from 'next/font/google'
 import { Header } from '@/components/Header'
 import '@/styles/globals.css'
 import { Footer } from '@/components/Footer'
+import { GoogleAnalytics } from '@next/third-parties/google';
+import { env } from '@/libs/env';
 
 const PublicSans = Public_Sans({
   variable: '--font-public-sans',
@@ -26,6 +28,7 @@ export default function RootLayout({
         <Header />
         {children}
         <Footer />
+        <GoogleAnalytics gaId={env.NEXT_PUBLIC_GA_ID} />
       </body>
     </html>
   )

@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@next/third-parties": "^16.2.1",
     "motion": "^12.12.2",
     "next": "15.1.8",
     "react": "^19.0.0",
@@ -20,8 +21,10 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "dotenv": "16.4.5",
     "eslint": "^9",
     "eslint-config-next": "15.1.8",
-    "typescript": "^5"
+    "typescript": "^5",
+    "zod": "^4.3.6"
   }
 }
